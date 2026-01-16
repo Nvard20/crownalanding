@@ -62,6 +62,26 @@
   </div>
 </section>
 </section>
+<section class="music-section" id="music">
+  <h2>My Music</h2>
+
+  <div class="player">
+    <button class="play-btn">▶</button>
+
+    <div class="track-info">
+      <span>Crowna – Live Set</span>
+    </div>
+
+    <div class="equalizer">
+      <span></span><span></span><span></span><span></span>
+    </div>
+
+     <audio id="audio">
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  </audio>
+  </div>
+</section>
+
 <section class="contact">
   <h2>Get In Touch</h2>
   <p>For bookings, collaborations, or events — reach out directly.</p>
@@ -80,5 +100,22 @@
 <footer>
   © 2026 DJ Crowna. All rights reserved.
 </footer>
+<script>
+const audio = document.getElementById('audio');
+const btn = document.querySelector('.play-btn');
+const eq = document.querySelector('.equalizer');
+
+btn.addEventListener('click', () => {
+  if (audio.paused) {
+    audio.play();
+    btn.textContent = '⏸';
+    eq.classList.add('playing');
+  } else {
+    audio.pause();
+    btn.textContent = '▶';
+    eq.classList.remove('playing');
+  }
+});
+</script>
 </body>
 </html>
