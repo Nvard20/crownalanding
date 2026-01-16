@@ -158,10 +158,11 @@
       .hero h1 { font-size: 42px; }
       section h2 { font-size: 28px; }
     }
-    .gallery {
+.gallery {
   padding: 60px 20px;
   text-align: center;
   background: #111;
+  margin-top: 35px;
 }
 
 .gallery h2 {
@@ -181,7 +182,6 @@
   width: 100%;
   padding-bottom: 100%;
   background-size: cover;
-  background-position: center;
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -204,4 +204,18 @@
 header {
   min-height: 80vh;     
 }   
+}
+@media (max-width: 576px) {
+.gallery-container
+ {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+     -ms-overflow-style: none;
+        scrollbar-width: none;
+}
+.gallery-item{
+  min-width: 260px;
+}
 }
