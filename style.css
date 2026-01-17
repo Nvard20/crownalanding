@@ -315,3 +315,37 @@ header {
   50% { height: 30px; }
   100% { height: 10px; }
 }
+.instagram-cta h2 {
+font-size: 36px;
+margin-bottom: 14px;
+text-shadow: 0 0 15px rgba(255,0,87,.9);
+}
+
+
+.instagram-cta p {
+max-width: 520px;
+margin: 0 auto 25px;
+font-size: 18px;
+opacity: .85;
+line-height: 1.6;
+}
+
+
+.insta-btn {
+display: inline-flex;
+align-items: center;
+gap: 14px;
+padding: 16px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+font-weight: 600;
+letter-spacing: 1px;
+color: #fff;
+background: linear-gradient(135deg, #ff0057, #ff3d81);
+text-decoration: none;
+box-shadow: 0 15px 40px rgba(255,0,87,.6);
+transition: transform .3s ease, box-shadow .3s ease;
+}
+.insta-btn i {
+font-size: 22px;
+}
