@@ -194,6 +194,10 @@
     background-color: #111;
 }
 @media (max-width: 576px) {
+  section {
+    padding: 45px 20px;
+    text-align: center;
+}
   .slides {
   height: 80vh;
 }
@@ -206,8 +210,6 @@
 header {
   min-height: 80vh;     
 }   
-}
-@media (max-width: 576px) {
 .gallery-container
  {
     display: flex;
@@ -219,6 +221,11 @@ header {
 }
 .gallery-item{
   min-width: 260px;
+}
+.gallery {
+    padding: 20px 0px;
+    text-align: center;
+    margin-top: 35px;
 }
 }
 .music-section {
