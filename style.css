@@ -2,7 +2,8 @@
 
     body {
       font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+      /* background: linear-gradient(135deg, #0f0f0f, #1c1c1c); */
+      background: linear-gradient(135deg, #292121, #161414);
       color: #fff;
       overflow-x: hidden;
     }
@@ -159,9 +160,8 @@
       section h2 { font-size: 28px; }
     }
 .gallery {
-  padding: 60px 20px;
+  padding: 60px 0px;
   text-align: center;
-  background: #111;
   margin-top: 35px;
 }
 
@@ -183,6 +183,7 @@
   padding-bottom: 100%;
   background-size: cover;
   border-radius: 15px;
+  background-position: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -196,7 +197,9 @@
   .slides {
   height: 80vh;
 }
-
+.gallery-item:hover {
+  transform: unset;
+}
 .slide {
   height: 80vh;
 }
